@@ -1,6 +1,8 @@
 :root {
     --accent-color: #94CFFF;
     --main-color: #26C7EA;
+    --text-color: #141414;
+    --white: #ffffff;
 }
 body {
     font-family: HeadlandOne;
@@ -43,7 +45,7 @@ img {
     overflow: hidden;
 }
 .container {
-    width: 1470px;
+    width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
 }
