@@ -45,7 +45,100 @@ img {
     overflow: hidden;
 }
 .container {
-    width: 1460px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.nav-item {
+    color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: normal;
+}
+.nav-item:hover :focus {
+    color: #94CFFF;
+        font-weight: 600;
+}
+.nav-item:focus {
+    color: #94CFFF;
+    font-weight: 600;
+}
+.nav-item-link {
+        color: #FFF;
+}
+.logo-btn {
+    color: #26C6EA;
+    font-size: 20px;
+    line-height: normal;
+    width: 141px;
+    height: 41.694px;
+    border-radius: 35px 0 35px 0;
+    border: 3px solid #26C7EA;
+    background: #0B0E66;
+}
+.language {
+    color: #FFF;
+        font-family: Hammersmith One;
+        line-height: normal;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+}
+.hero {
+    background-image: url(../images/hero_bg.jpg);
+}
+.hero-text {
+    color: #FFF;
+        font-family: Inter;
+        font-size: 20px;
+        line-height: normal;
+}
+.hero-btn {
+    color: #26C7EA;
+    font-size: 24px;
+    line-height: normal;
+    width: 260px;
+    height: 80px;
+    border-radius: 45px 0px;
+    border: 3px solid #26C7EA;
+    background: #0B0E66;
+}
+.quotation-title {
+    color: #0A3853;
+        text-align: justify;
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+}
+.quotation-text { 
+        text-align: center;
+        font-family: Inter;
+        font-size: 24px;
+        line-height: normal;
+}
+.trailer-btn {
+    color: #26C7EA;
+        font-size: 24px;
+        line-height: normal;
+        width: 260px;
+        height: 80px;
+        border-radius: 45px 0px;
+        border: 3px solid #26C7EA;
+        background: #0B0E66;
+}
+.language-learning-subtitle {
+    color: #141414;
+    text-align: center;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: normal;
+}
+.language-learning-item {
+    color: #141414;
+    font-size: 24px;
+    line-height: 100%;
+    width: 320px;
+    height: 240px;
 }
