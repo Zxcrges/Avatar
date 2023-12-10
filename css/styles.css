@@ -49,6 +49,13 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+.header {
+    background-image: url(../images/header_bg.jpg);
+    border-bottom: 3px solid #FFF;
+    background-color: rgba(43, 74, 97, 0.87);
+    background-repeat: no-repeat;
+    
+}
 .nav-item {
     color: #FFF;
         text-align: center;
