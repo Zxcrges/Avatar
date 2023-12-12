@@ -50,30 +50,34 @@ img {
     padding: 0 15px;
 }
 .header {
-    background-image: url(../images/header_bg.jpg);
     border-bottom: 3px solid #FFF;
-    background-color: rgba(43, 74, 97, 0.87);
+    background-image: linear-gradient(rgba(43, 74, 97, 0.87), 
+    rgba(43, 74, 97, 0.87)), url(../images/header_bg.jpg);
     background-repeat: no-repeat;
-    
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 .nav-item {
     color: #FFF;
-        text-align: center;
-        font-family: Inter;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: normal;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
 }
 .nav-item:hover :focus {
     color: #94CFFF;
-        font-weight: 600;
+    font-weight: 600;
 }
 .nav-item:focus {
     color: #94CFFF;
     font-weight: 600;
 }
 .nav-item-link {
-        color: #FFF;
+    color: #FFF;
 }
 .logo-btn {
     color: #26C6EA;
@@ -85,21 +89,35 @@ img {
     border: 3px solid #26C7EA;
     background: #0B0E66;
 }
+.language-change {
+    display: flex;
+    justify-content: end;
+}
 .language {
     color: #FFF;
-        font-family: Hammersmith One;
-        line-height: normal;
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
+    font-family: Hammersmith One;
+    line-height: normal;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 .hero {
     background-image: url(../images/hero_bg.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 1460px;
+    height: 740px;
 }
 .hero-text {
     color: #FFF;
-        font-family: Inter;
-        font-size: 20px;
-        line-height: normal;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: normal;
+    width: 298px;
+    height: 96px;
+    margin-bottom: 40px;
+}
+.hero-text:nth-child(1) {
+    margin-top: 180px;
 }
 .hero-btn {
     color: #26C7EA;
@@ -110,30 +128,44 @@ img {
     border-radius: 45px 0px;
     border: 3px solid #26C7EA;
     background: #0B0E66;
+    margin-top: 42px;
+    /* Двигайся блин!!! */
 }
 .quotation-text {
     color: #0A3853;
-        text-align: justify;
-        font-family: Inter;
-        font-size: 36px;
-        font-weight: 400;
-        line-height: normal;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
 }
 .quotation-author { 
-        text-align: center;
-        font-family: Inter;
-        font-size: 24px;
-        line-height: normal;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    line-height: normal;
+}
+.trailer {
+    width: 1440px;
+    height: 741px;
+    display: flex;
+    justify-content: center;
+    /* почему то кнопки не хотят 
+    переноситься нормально, 
+    не знаю почему */
 }
 .trailer-btn {
     color: #26C7EA;
-        font-size: 24px;
-        line-height: normal;
-        width: 260px;
-        height: 80px;
-        border-radius: 45px 0px;
-        border: 3px solid #26C7EA;
-        background: #0B0E66;
+    font-size: 24px;
+    line-height: normal;
+    width: 260px;
+    height: 80px;
+    border-radius: 45px 0px;
+    border: 3px solid #26C7EA;
+    background: #0B0E66;
+}
+.language-learning {
+    background-color: #0A3853;
 }
 .language-learning-subtitle {
     color: #141414;
@@ -142,10 +174,39 @@ img {
         font-weight: 400;
         line-height: normal;
 }
+.language-learning-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .language-learning-item {
     color: #141414;
     font-size: 24px;
     line-height: 100%;
     width: 320px;
     height: 240px;
+    background: rgba(255, 255, 255, 0.70);
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+    background-color: #94CFFF;
+}
+.footer-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: normal;
+}
+.footer-link {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: normal;
+}
+.footer-licenses {
+    display: flex;
+    justify-content: center;
+    /* Да емае почему оно не хочет разделиться!? */
 }
