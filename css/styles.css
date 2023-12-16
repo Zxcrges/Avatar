@@ -51,8 +51,10 @@ img {
 }
 .header {
     border-bottom: 3px solid #FFF;
-    background-image: linear-gradient(rgba(43, 74, 97, 0.87), 
-    rgba(43, 74, 97, 0.87)), url(../images/header_bg.jpg);
+    background-image: 
+    linear-gradient(rgba(43, 74, 97, 0.87), 
+    rgba(43, 74, 97, 0.87)), 
+    url(../images/header_footer_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,13 +63,14 @@ img {
 }
 .header .container {
     display: flex;
+    align-items: center;
 }
 .avatar-logo {
     justify-content: flex-start;
+    margin-right: 168px;
 }
 .nav-list {
     display: flex;
-    justify-content: center;
 }
 .nav-item {
     color: #FFF;
@@ -76,6 +79,7 @@ img {
     font-size: 20px;
     font-weight: 300;
     line-height: normal;
+    margin-right: 38px;
 }
 .nav-item:hover :focus {
     color: #94CFFF;
@@ -97,6 +101,11 @@ img {
     border-radius: 35px 0 35px 0;
     border: 3px solid #26C7EA;
     background: #0B0E66;
+    margin-left: 174px;
+    /* я отняла 212 на 38 если что! */
+}
+.language-change {
+    margin-left: auto;
 }
 .language {
     color: #FFF;
@@ -107,8 +116,6 @@ img {
 }
 .hero {
     background-image: url(../images/hero_bg.jpg);
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 180px;
     padding-bottom: 179px;
     background-position: center;
@@ -135,6 +142,9 @@ img {
     margin-top: 42px;
     /* Двигайся блин!!! */
 }
+.quotation {
+    padding-top: 75px;
+}
 .quotation-text {
     color: #0A3853;
     text-align: justify;
@@ -142,21 +152,31 @@ img {
     font-size: 36px;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 16px;
 }
 .quotation-author { 
     text-align: center;
     font-family: Inter;
     font-size: 24px;
     line-height: normal;
+    padding-bottom: 10px;
+}
+.quotation-author::after {
+    content: '';
+    display: block;
+    background-image: url(../images/decoration_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 120px;
+    margin: 0 auto;
 }
 .trailer {
-    width: 1440px;
-    height: 741px;
-    display: flex;
-    justify-content: center;
-    /* почему то кнопки не хотят 
-    переноситься нормально, 
-    не знаю почему */
+    background-image: url(../images/trailer_bg.jpg);
+    background-size: cover;
+    padding-top: 330px;
+    padding-bottom: 330px;
+    padding-left: 590px;
 }
 .trailer-btn {
     color: #26C7EA;
@@ -169,14 +189,23 @@ img {
     background: #0B0E66;
 }
 .language-learning {
-    background-color: #0A3853;
+    background-image: url(../images/language_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 57px;
+}
+.language-learning-item {
+    text-align: center;
 }
 .language-learning-subtitle {
     color: #141414;
     text-align: center;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: normal;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 58px;
+    padding-bottom: 45px;
 }
 .language-learning-list {
     display: flex;
@@ -192,10 +221,24 @@ img {
     height: 240px;
     background: rgba(255, 255, 255, 0.70);
 }
-.footer-list {
+.footer {
+    background-image: 
+    linear-gradient(rgba(43, 74, 97, 0.87),
+    rgba(43, 74, 97, 0.87)), 
+    url(../images/header_footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-wrapper {
     display: flex;
-    justify-content: center;
-    background-color: #94CFFF;
+    gap: 160px;
+    padding-top: 77px;
+    padding-bottom: 75px;
+}
+.footer-item {
+    display: flex;
+    justify-content: space-between;
 }
 .footer-text {
     color: #FFF;
@@ -212,5 +255,4 @@ img {
 .footer-licenses {
     display: flex;
     justify-content: center;
-    /* Да емае почему оно не хочет разделиться!? */
 }
