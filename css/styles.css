@@ -102,7 +102,6 @@ img {
     border: 3px solid #26C7EA;
     background: #0B0E66;
     margin-left: 174px;
-    /* я отняла 212 на 38 если что! */
 }
 .language-change {
     margin-left: auto;
@@ -140,7 +139,6 @@ img {
     border: 3px solid #26C7EA;
     background: #0B0E66;
     margin-top: 42px;
-    /* Двигайся блин!!! */
 }
 .quotation {
     padding-top: 75px;
@@ -221,6 +219,16 @@ img {
     height: 240px;
     background: rgba(255, 255, 255, 0.70);
 }
+/* .language-learning-item-text::after {
+    content: '';
+    display: block;
+    background-image: url(../images/decoration_3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 152px;
+    height: 40px;
+    margin: 0 auto;
+} */
 .footer {
     background-image: 
     linear-gradient(rgba(43, 74, 97, 0.87),
