@@ -106,6 +106,10 @@ img {
 .language-change {
     margin-left: auto;
 }
+.language-change-container {
+    display: flex;
+    justify-content: flex-end;
+}
 .language {
     color: #FFF;
     font-family: Hammersmith One;
@@ -113,12 +117,28 @@ img {
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
+.eng::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 20px;
+    background-image: url(../images/switcher.svg);
+}
 .hero {
     background-image: url(../images/hero_bg.jpg);
     padding-top: 180px;
     padding-bottom: 179px;
     background-position: center;
     background-size: cover;
+}
+.hero-wrapper {
+    background-image: 
+    url(../images/hero_inst.svg),
+    url(../images/hero_twitter.svg),
+    url(../images/hero_youtube.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px 30px, 34px 30px, 50px 30px;
 }
 .hero-text {
     color: #FFF;
@@ -219,16 +239,25 @@ img {
     height: 240px;
     background: rgba(255, 255, 255, 0.70);
 }
-/* .language-learning-item-text::after {
-    content: '';
-    display: block;
-    background-image: url(../images/decoration_3.svg);
-    background-repeat: no-repeat;
+.language-learning-item:nth-child(3n) .language-learning-item-ua::after {
+    transform: rotate(180deg);
+}
+.language-learning-item:nth-child(3n + 2) .language-learning-item-ua::after {
+    background-image: url("../images/decoration_4.svg");
     background-position: center;
+    background-size: contain;
+}
+.language-learning-item-ua {
+    margin-top: 36px;
+}
+.language-learning-item-ua::after {
+    content: "";
+    display: block;
+    margin: 40px auto;
     width: 152px;
     height: 40px;
-    margin: 0 auto;
-} */
+    background-image: url("../images/decoration_3.svg");
+}
 .footer {
     background-image: 
     linear-gradient(rgba(43, 74, 97, 0.87),
@@ -237,22 +266,26 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 80px;
 }
 .footer-wrapper {
     display: flex;
     gap: 160px;
-    padding-top: 77px;
-    padding-bottom: 75px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 37px;
 }
 .footer-item {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 16px;
 }
 .footer-text {
     color: #FFF;
     font-family: Inter;
     font-size: 20px;
     line-height: normal;
+    width: 396px;
 }
 .footer-link {
     color: #FFF;
@@ -263,4 +296,8 @@ img {
 .footer-licenses {
     display: flex;
     justify-content: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;;
+    line-height: normal;
 }
