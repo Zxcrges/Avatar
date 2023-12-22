@@ -101,14 +101,11 @@ img {
     border-radius: 35px 0 35px 0;
     border: 3px solid #26C7EA;
     background: #0B0E66;
-    margin-left: 174px;
+    margin-left: 121px;
 }
 .language-change {
-    margin-left: auto;
-}
-.language-change-container {
     display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
 }
 .language {
     color: #FFF;
@@ -116,13 +113,6 @@ img {
     line-height: normal;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-}
-.eng::after {
-    content: '';
-    display: block;
-    width: 36px;
-    height: 20px;
-    background-image: url(../images/switcher.svg);
 }
 .hero {
     background-image: url(../images/hero_bg.jpg);
@@ -267,6 +257,7 @@ img {
     background-position: center;
     background-size: cover;
     padding-top: 80px;
+    padding-bottom: 25px;
 }
 .footer-wrapper {
     display: flex;
