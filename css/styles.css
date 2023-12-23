@@ -92,6 +92,12 @@ img {
 .nav-item-link {
     color: #FFF;
 }
+.nav-item-link:focus {
+    color: var(--accent-color);
+}
+.nav-item-link:hover {
+    color: var(--accent-color);
+}
 .logo-btn {
     color: #26C6EA;
     font-size: 20px;
@@ -105,9 +111,11 @@ img {
 }
 .logo-btn:hover {
     cursor: pointer;
+    opacity: 0.9;
 }
 .logo-btn:focus {
     cursor: pointer;
+    opacity: 0.9;
 }
 .language-change {
     display: flex;
@@ -155,9 +163,11 @@ img {
 }
 .hero-btn:focus {
     cursor: pointer;
+    opacity: 0.9;
 }
 .hero-btn:hover {
     cursor: pointer;
+    opacity: 0.9;
 }
 .hero-list {
     display: flex;
@@ -213,9 +223,11 @@ img {
 }
 .trailer-btn:hover {
     cursor: pointer;
+    opacity: 0.9;
 }
 .trailer-btn:focus {
     cursor: pointer;
+    opacity: 0.9;
 }
 .language-learning {
     background-image: url(../images/language_bg.jpg);
@@ -300,6 +312,12 @@ img {
     font-family: Inter;
     font-size: 20px;
     line-height: normal;
+}
+.footer-link:focus {
+    color: var(--accent-color);
+}
+.footer-link:hover {
+    color: var(--accent-color);
 }
 .footer-licenses {
     display: flex;
