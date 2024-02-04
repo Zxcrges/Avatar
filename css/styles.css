@@ -4,9 +4,12 @@
     --text-color: #141414;
     --white: #ffffff;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: HeadlandOne;
-    padding-top: 150px;
+
 }
 h1,
 h2,
@@ -135,10 +138,11 @@ img {
 }
 .hero {
     background-image: url(../images/hero_bg.jpg);
-    padding-top: 180px;
+    padding-top: 330px;
     padding-bottom: 179px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .hero-wrapper {
     width: 298px;
@@ -321,4 +325,23 @@ img {
     font-family: Inter;
     font-size: 14px;
     line-height: normal;
+}
+.scroll-btn {
+    position: fixed;
+    padding: 18px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: block;
+    bottom: 20px;
+    right: 20px;
+}
+.scroll-btn::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-width: 0 3px 3px 0;
+    border-color: #fff;
+    border-style: solid;
+    transform: rotate(-135deg);
 }
