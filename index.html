@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Headland+One&family=Inter:wght@300;400;600&display=swap"
     rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
@@ -51,7 +52,7 @@
             щоб стати частиною Народу.
             Борись разом з нами!
           </p>
-          <button type="button" class="hero-btn">Приєднатися до клану</button>
+          <button type="button" class="hero-btn" data-modal-open>Приєднатися до клану</button>
         </div>
         <ul class="list hero-list">
           <li class="hero-item">
@@ -66,7 +67,7 @@
         </ul>
       </div>
     </section>
-    <div class="quotation">
+    <div class="quotation" data-aos="fade-left">
       <div class="container">
         <p class="quotation-text">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ
           ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”</p>
@@ -78,7 +79,7 @@
         <button type="button" class="trailer-btn">Дивитись трейлер</button>
       </div>
     </section>
-    <div class="quotation">
+    <div class="quotation" data-aos="fade-left">
       <div class="container">
         <p class="quotation-text">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ
           ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</p>
@@ -88,7 +89,7 @@
     <section class="language-learning">
       <div class="container">
         <h2 class="language-learning-subtitle">Вчимо мову На’ві</h3>
-          <ul class="list language-learning-list">
+          <ul class="list language-learning-list" data-aos="fade-up">
             <li class="language-learning-item">
               <p class="language-learning-item-ua">Привіт</p>
               <p class="language-learning-item-navi">Kaltxì</p>
@@ -116,7 +117,7 @@
           </ul>
       </div>
     </section>
-    <div class="quotation">
+    <div class="quotation" data-aos="fade-left">
       <div class="container">
         <p class="quotation-text">“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,
           ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</p>
@@ -143,5 +144,24 @@
     </div>
   </footer>
   <a href="#hero" class="scroll-btn"></a>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-join">
+        <button type=”button” class="modal-join-btn-close" data-modal-close>
+          <svg width="18" height="18" class="modal-join-icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form>
+          <input type="text" name="name" class="modal-join-input">
+          <input type="email" name="email" class="modal-join-input">
+          <button type="submit" class="modal-join-btn">Приєднатися до клану</button>
+        </form>
+      </div>
+    </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./modal/modal.js"></script>
 </body>
 </html>
